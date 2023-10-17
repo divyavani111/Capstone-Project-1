@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="css/style.css">
+
+ <style>
+  body{
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color:#fff;
+    height: 10vh;
+    line-height: 0;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0;
+}
+  .book {
+    padding: 10px 10px;
+    background: #ffffff;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    top: -54%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 1px #ddd;
+    width: 60%;
+    margin-top: 165px;
+}
+header ul li a{
+  color: #000;
+}
+#brand a{
+    color: #000;
+}
+.logo i{
+  color: #000!important;
+}
+.tabs label {
+    background: #fff;
+    border-radius: none;
+    border: none!important;
+}
+.tabs input[type="radio"]:checked + label {
+    background: #fff;
+    border-bottom: 2px solid blue!important;
+    border-radius: 0;
+
+}
+.card{
+  padding: 0;
+}
+.tabs .tab {
+    border: none;
+    background: #f4f4f4;
+}
+.book input{
+  padding: 10px 36px;
+  background-color: #ddd;
+}
+.book{
+  width: 80%;
+  background-color: #fff;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 32%;
+}
+
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.product-single img{
+  margin-top: 0;
+}
+#brand{
+  margin-top: 15px;
+}
+@media only screen and (max-width: 768px){
+header ul li {
+    padding: 24px 10px;
+}
+div.gallery{
+  width: 100%;
+}
+.product-single img{
+  width: 100%;
+}
+header ul li a{
+  color: #fff;
+}
+header{
+  position: relative;
+}
+}
+ </style>
+</head>
+
+<body>
+  <header>
+    <div id="brand"><a href="/">
+      <div class="logo">
+        <img src="images/logo.png" width="15px" alt=""> My Dream place
+      </div>
+    </a></div>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href=""><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+        <li><a href=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li id="login"><a href="" class="" ><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+        <li id="signup"><a href="" class=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
+
+
+<!-------header ends---------->
+<section style="background-color: #f4f4f4;">
+<div class="container product-single">
+  <img src="images/product-detail.png" alt="">
+</div>
+</section>
+
+<!---------product details----------->
+<section class="products-info" style="background-color: #f4f4f4;">
+  <div class="container">
+    <div class="row">
+      
+      
+      <div class="rightcolumn" style="width: 100%;">
+        <div class="card">
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <label for="tabone">Overview</label>
+            <!----tab 1 content----->
+            
+            <div class="tab grid-container">
+              
+              <div>
+              <h4 class="place-name" style="font-size: 25px;">Lakeside Motel Warefront</h4>
+              <span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span style="font-size: 10px;">4.5(1200 reviews)</span>
+              <p style="font-size: 12px;line-height: 32px;">  <i class='fas fa-map-marker-alt' style="color: #a1bff5;"></i>
+                 Live a little and celebrate with champange
+                </p>
+                <div style="background-color: #fff;padding: 20px; width: 160%;">
+                <h3 style="font-weight: 500;font-size: 15px;margin-bottom: 20px;"> Overview</h3>
+
+            <p style="font-size: 12px;margin-bottom: 10px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut euismod est, ac varius tellus. Curabitur 
+              porttitor augue leo.</p>
+
+              <p style="font-size: 12px;margin-bottom: 10px;"> Each room React includes sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut euismod est, ac varius tellus. Curabitur 
+                porttitor augue leo. Phasellus interdum nisl eu velit eleifend, sed consectetur nisl scelerisque. Vestibulum in rhoncus ex. </p>
+                <p style="font-size: 12px;margin-bottom: 20px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut euismod est, ac varius tellus. Curabitur 
+                  porttitor augue leo. Phasellus interdum nisl eu velit eleifend, sed consectetur nisl scelerisque. Vestibulum in rhoncus ex. </p>
+
+
+                  <hr>
+                  <div>
+                    <h3 style="margin-top: 10px;">Top Facilities</h3>
+                    <div class="grid-container" style="background-color: transparent;">
+                      <a href="" style="font-size: 13px;"><i class='fas fa-map-marker-alt' style="color: #a1bff5;"></i> free wifi</a>
+                      <a href="" style="font-size: 13px;"><i class='fas fa-map-marker-alt' style="color: #a1bff5;"></i> Business service</a>
+                   
+                      <a href="" style="font-size: 13px;"><i class='fas fa-map-marker-alt' style="color: #a1bff5;"></i> Air conditioning</a>
+                      <a href="" style="font-size: 13px;"><i class='fas fa-map-marker-alt' style="color: #a1bff5;"></i> Swimming pool</a>
+                    </div>
+                  </div>
+          </div>
+          
+          
+          
+          </div>
+
+        
+              
+          <div class="leftcolumn" style="width: 100%;">
+
+            <div class="mapouter"><div class="gmap_canvas">
+              <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+              src="https://maps.google.com/maps?width=0&amp;height=250&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/"></a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:350px!important;height:250px!important;}</style></div>
+            <div style="float: right;">
+              <h4>Explore the area</h4>
+              <div class="grid-container" style="background-color: transparent;font-size: 13px;">
+  <div><i class="fa fa-plane" aria-hidden="true"></i> Hotel penselvai</div>
+  <div>2 mins drive</div>  
+  
+</div>
+
+
+<div class="grid-container" style="background-color: transparent;font-size: 13px;">
+  <div> <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hotel penselvai</div>
+  <div>12 mins drive</div>  
+  
+</div>
+
+<div class="grid-container" style="background-color: transparent;font-size: 13px;">
+  <div> <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hotel penselvai</div>
+  <div>20 mins drive</div>  
+  
+</div>
+
+
+            </div>
+          </div>
+
+            </div>
+            <!-----------tab 1 content ends------->
+            
+
+
+            
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo">Rooms</label>
+            <div class="tab">
+              <h1>Tab Two Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            
+            <input type="radio" name="tabs" id="tabthree">
+            <label for="tabthree">Guest Reviews</label>
+            <div class="tab">
+              <h1>Tab Three Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+
+          </div>
+          
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------product details ends----------->
+<section style="background-color: #f4f4f4;">
+<div class="container">
+  <h4>Available Rooms</h4>
+
+</div>
+
+<div class="container flex_space book" style="margin-top: 20px;">
+      
+  <div class="form">
+    <form class="grid">
+      <input type="text" placeholder="Araival date" value="mar 18 2020"> 
+      <input type="text" placeholder="check in date" value="mar 20 2020">
+      <input type="text" placeholder="check out date" value=" 2 adult, 1 room">
+      <input type="number" placeholder="Guests">
+      <input type="submit" value="Check availability">
+    </form>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="gallery" style="border: none;">
+      <a target="_blank" href="">
+        <img src="images/coupon.png" alt="Cinque Terre" style="height: 40vh!important;">
+      </a>
+      
+    </div>
+    
+    <div class="gallery" style="border: none;">
+      <a target="_blank" href="">
+        <img src="images/living-1.png" alt="Cinque Terre" style="height: 40vh!important;">
+      </a>
+      <div class="desc coupon-text" style="font-size: 13px;font-weight: 400;line-height: 30px;">
+        <p style="font-weight: 600;font-size: 15px;">standard twin berd,Multiple beds</p>
+        <p><i class="fa fa-hand-o-right"></i> 300 sq ft</p>
+        <p> <i class="fa fa-hand-o-right"></i> sleeps 3</p>
+        <p> <i class="fa fa-hand-o-right"></i> 1 double bed and 1 twin bed</p>
+        <button class="success-btn" style="width: 100%;">Reserve suite</button>
+
+      </div>
+    </div>
+    
+    <div class="gallery" style="border: none;">
+      <a target="_blank" href="">
+        <img src="images/living-2.png" alt="Cinque Terre" style="height: 40vh!important;">
+      </a>
+      <div class="desc coupon-text" style="font-size: 13px;font-weight: 400;line-height: 30px;">
+        <p style="font-weight: 600;font-size: 15px;">standard twin berd,Multiple beds</p>
+        <p><i class="fa fa-hand-o-right"></i> 300 sq ft</p>
+        <p> <i class="fa fa-hand-o-right"></i> sleeps 3</p>
+        <p> <i class="fa fa-hand-o-right"></i> 1 double bed and 1 twin bed</p>
+        <button class="success-btn" style="width: 100%;">Reserve suite</button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="width: 80%!important">
+    <div class="alert">
+      <i class='fas fa-exclamation-triangle' style='font-size:15px'></i> 
+      Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a>
+    </div>
+  </div>
+</section>
+
+
+<!--------------footer------------>
+
+
+<!-- <section class="explore mtop">
+  <div class="container" style="text-align: center;">
+    <h1> <b>Explore the world with My Dream place </b></h1>
+    <p>Discover new places and experiences</p>
+  </div>
+</section> -->
+
+
+<footer style="padding-top: 3rem;">
+  <div class="container grid">
+    <div class="box logo">
+      
+      <img src="images/logo.png" width="15px" alt=""> My Dream place
+       
+      <p>your next goto companion for <br> travel</p>
+      
+    </div>
+
+    <div class="box">
+      <h2>Company</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+
+    <div class="box">
+      <h2>Explore</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Terms and policies</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Help</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    
+  </div>
+</footer>
+
+<div class="legal">
+  <p class="  container">&copy; my Dream Place 2022</p>
+</div>
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+<!-- fontawesome -->
+
+</body>
+
+</html>

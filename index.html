@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="css/style.css">
+
+ 
+</head>
+
+<body>
+  <header>
+    <div id="brand"><a href="/">
+      <div class="logo">
+        <img src="images/logo.png" width="15px" alt=""> My Dream place
+      </div>
+    </a></div>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href=""><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+        <li><a href=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li id="login"><a href="" class="" ><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+        <li id="signup"><a href="" class=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+      </ul>
+    </div>
+  </header>
+  <script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
+
+  <section class="banner-section">
+    <div class="banner">
+      <img src="images/banner-6.png" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1>Enjoy Your Dream Vacation</h1>
+        <p>Plan and book your perfect with expert advice,travel tips,destination information and inspiration from us</p>
+      </div>
+    </div>
+    
+    <div class="container flex_space book">
+      
+      <div class="form">
+        <form class="grid">
+          
+          <input type="text" placeholder="Araival date" value="Where are you going?"> 
+          <input type="text" placeholder="check in date" value="check in date">
+          <input type="text" placeholder="check out date" value="check out date">
+          <input type="number" placeholder="Guests">
+          <input type="submit" value="Search">
+        </form>
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section>
+    <div class="container" style="width: 80%!important">
+      <div class="alert">
+        <i class='fas fa-exclamation-triangle' style='font-size:15px'></i> 
+        Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a>
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- <section class="about top">
+    <div class="container flex">
+      <div class="left ">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Crowny Hotel</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="images/about.png" alt="">
+      </div>
+    </div>
+  </section>  -->
+
+
+<!-- 
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Repaired</span>
+      </div>
+    </div>
+  </section>  -->
+
+
+  
+
+
+
+<section>
+  <div class="container">
+    <div class="heading">
+        
+      <h2>Enjoy Your dream vacation</h2>
+          <p>Plan and book your perfect with expert advice,travel tips,destination information and inspiration from us </p>
+        
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/country-1.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Australia</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/country-2.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Australia</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/country-3.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Australia</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/country-4.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Australia</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section style="margin-bottom: 20px;">
+  <div class="container">
+    <div class="heading">
+        
+      <h2>Get Inspiration for your next trip</h2>
+    </div>
+    <div class="responsive inspiration-block" style="width: 33.2%;">
+      <div class="gallery container-1">
+          <img src="images/banner-5.png" alt="Cinque Terre" width="800" height="400">
+          <div class="content">
+            <h1>Sydneys 10 most 5 star hotels</h1>
+            <p style="font-size: 13px;">Browse the fastest growing tourism sector in the heart of australia tourism capital</p>
+          </div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive inspiration-block" style="width: 33.2%;">
+      <div class="gallery container-1">
+          <img src="images/banner-3.jpg" alt="Cinque Terre" width="800" height="400">
+          <div class="content">
+            <h1>Sydneys 10 most 5 star hotels</h1>
+            <p style="font-size: 13px;">Browse the fastest growing tourism sector in the heart of australia tourism capital</p>
+          </div>
+      </div>
+    </div>
+    
+    <div class="responsive inspiration-block" style="width: 33.2%;">
+      <div class="gallery container-1">
+          <img src="images/banner-4.png" alt="Cinque Terre" width="800" height="400">
+          <div class="content">
+            <div class="content">
+              <h1>Sydneys 10 most 5 star hotels</h1>
+              <p style="font-size: 13px;">Browse the fastest growing tourism sector in the heart of australia tourism capital</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="heading">
+        
+      <h2>Popular Hotels</h2>
+        
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/hotel-1.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Lakeside Motel Warefort</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/hotel-2.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Lakeside Motel Warefort</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/hotel-3.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Australia</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+          <img src="images/hotel-4.png" alt="Cinque Terre" width="600" height="400">
+        <div class="desc">Lakeside Motel Warefort</div>
+        <p class="property-avail">2246 properties</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="container booking">
+  <img src="images/booking-1.jpg" alt="Nature" style="width:100%;height: 40vh;">
+  <div class="text-block">
+    <h4>Download the mobile application for bonus <br>  coupons and travel codes</h4>
+    <button class="success-btn download-app">Download mobile app</button>
+  </div>
+</div>
+
+
+<!--------------footer------------>
+
+
+  <section class="explore mtop">
+    <div class="container" style="text-align: center;">
+      <h1> <b>Explore the world with My Dream place </b></h1>
+      <p>Discover new places and experiences</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box logo">
+        
+        <img src="images/logo.png" width="15px" alt=""> My Dream place
+         
+        <p>your next goto companion for <br> travel</p>
+        
+      </div>
+
+      <div class="box">
+        <h2>Company</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+
+      <div class="box">
+        <h2>Explore</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Terms and policies</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Help</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="  container">&copy; my Dream Place 2022</p>
+  </div>
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+
+</body>
+
+</html>

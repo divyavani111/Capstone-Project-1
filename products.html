@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <link rel="stylesheet" href="css/style.css">
+
+ <style>
+  header {
+    background-color: #215fb2;
+    height: 27vh;
+    line-height: 10vh;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+  .book {
+    padding: 10px 10px;
+    background: #ffffff;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    top: -54%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 1px #ddd;
+    width: 60%;
+    margin-top: 165px;
+}
+header ul li a{
+  color: #fff;
+}
+#brand a{
+    color: #fff;
+}
+.logo i{
+  color: #fff!important;
+}
+#hamburger-icon div{
+  background-color: #fff;
+}
+.tabs a{
+  color: #000;
+}
+.check-avail{
+  color: #fff!important;
+}
+@media only screen and (max-width: 768px){
+header {
+    position: relative;
+    height: 9vh;
+}
+.book{
+  width: 100%;
+  margin-top: 0;
+  box-shadow: none;
+}
+header ul li a{
+  font-size: 18px;
+}
+.check-avail{
+  display: none;
+}
+}
+ </style>
+</head>
+
+<body>
+  <header>
+    <div id="brand"><a href="/">
+      <div class="logo">
+        <img src="images/logo.png" width="15px" alt=""> My Dream place
+      </div>
+    </a></div>
+    <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Discover</a></li>
+          <li><a href="">Activities</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href=""><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+          <li><a href=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Discover</a></li>
+          <li><a href="">Activities</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li id="login"><a href="" class="" ><i class="fa fa-bell" style="color: #ddd;font-size: 20px;"></i></a></li>
+          <li id="signup"><a href="" class=""><img src="images/avatar.jpg" alt="Avatar" class="avatar"></a></li>
+        </ul>
+      </div>
+  </header>
+  <script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
+<section class="banner-section" >
+  <div class="banner">
+    
+  </div>
+  
+  <div class="container flex_space book">
+    
+    <div class="form">
+      <form class="grid">
+        <input type="text" placeholder="Araival date" value="melborn"> 
+        <input type="text" placeholder="check in date" value="march 18 2020">
+        <input type="text" placeholder="check out date" value="march 20 2020">
+        <input type="number" placeholder="Guests">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-------header ends---------->
+
+<!---------product details----------->
+<section class="products-info">
+  <div class="container">
+    <div class="row">
+      
+      <div class="rightcolumn">
+        <div class="card bg-grey">
+          <h5>search by property name</h5>
+          <form>
+          <input type="text" placeholder=" eg:Beach Westpalm " style="padding: 10px;">
+        </form>
+        </div>
+        
+        <div>
+          <h4>Filter by</h4>
+        </div>
+        <!-----------fliter -->
+        <div class="card" style="background-color: #ddd;">
+         
+            <h5 class="">Your budget per day</h5>
+            </div>
+            <div class="card" style="border: 1px solid #ddd;
+            margin-top: -20px;">
+            <label class="budget-range">$0-$200
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+           
+
+            <label class="budget-range">$200-$500
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="budget-range">$500-$1000
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="budget-range">$1000-$2000
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="budget-range">$2000-$5000
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="budget-range" style="float: left;"> set your own budget </label>
+             
+                <input type="range" id="vol" name="vol" min="0" max="50" style="float: right;width: 30%;"> 
+             
+        </div> 
+        <!-----------------filter ends------>
+        <!--------rating------------>
+        <div class="card" style="background-color: #ddd;">
+         
+          <h5 class="">Rating</h5>
+          </div>
+          <div class="card" style="border: 1px solid #ddd;
+          margin-top: -25px;">
+          <p style="font-size: 13px;padding: 13px 0px;">show ratings only more than</p>
+         <a class="rating"><span>1</span> <span class="fa fa-star checked"></span></a> 
+         <a class="rating"><span>2</span> <span class="fa fa-star checked"></span></a>
+         <a class="rating"><span>3</span> <span class="fa fa-star checked"></span></a>
+         <a class="rating"><span>4</span> <span class="fa fa-star checked"></span></a>
+         <a class="rating"><span>5</span> <span class="fa fa-star checked"></span></a>
+         
+           
+      </div>
+       
+        <!--------rating ends------------>
+
+        <!-----------popular fliter--------- -->
+        <div class="card" style="background-color: #ddd;">
+         
+          <h5 class="">Popular Filters </h5>
+          </div>
+          <div class="card" style="border: 1px solid #ddd;
+          margin-top: -20px;">
+          <label class="budget-range">Free cancellation
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+         
+
+          <label class="budget-range">spa
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Beach front
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Hot tub/jacuzzi
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Book without credit card
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+          <label class="budget-range">No Prepayment
+                        <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+          
+      </div> 
+      <!---------------popular filter ends------>
+
+         <!-----------Activities--------- -->
+         <div class="card" style="background-color: #ddd;">
+         
+          <h5 class="">Activities </h5>
+          </div>
+          <div class="card" style="border: 1px solid #ddd;
+          margin-top: -20px;">
+          <label class="budget-range">Fishing
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+         
+
+          <label class="budget-range">Hiking
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Beach 
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Cycling
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="budget-range">Sauna
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+          <label class="budget-range">Night Lights
+                        <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+          
+      </div> 
+      <!---------------Activities ends------>
+       
+        
+      </div>
+      <div class="leftcolumn">
+        
+        <div class="card">
+          <h2>Melbourn:2582 search results found</h2>
+
+
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <label for="tabone">Our top picks</label>
+            <!----tab 1 content----->
+            <a href="product-details.html">
+            <div class="tab grid-container">
+              <div><img src="images/room-1.jpg" alt="" width="100%" height="200px"></div>
+              <div>
+              <h4 class="place-name">Lakeside Motel Warefront</h4>
+              <span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span style="font-size: 10px;">4.5(1200 reviews)</span>
+              <p style="font-size: 12px;line-height: 32px;">Live a little and celebrate with champange</p>
+            <p style="font-size: 12px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+            <a href="" class="success-btn check-avail">check availability</a>
+          </div>
+              
+          <div>
+            <a href="" class="danger-btn">Book now and receive 15% off</a>
+            <br><br><br>
+            <a href="" class="off-btn" style="float: right;">5% off</a>
+            <br><br> 
+            <p style="float: right;font-size: 12px;">1 room 2 days</p>
+            <br>
+            <p style="float: right;font-size: 15px;"> <span style="font-size: 12px;color: #eb5757;"> <s>$150</s> </span> <b> $130 </b> 
+            </p> <br>
+            <p style="font-size: 12px;float: right;">includes taxes and fees</p>
+          </div>
+
+            </div>
+            </a>
+            <!-----------tab 1 content ends------->
+
+              <!----tab 1 content----->
+              <a href="product-details.html">
+            <div class="tab grid-container">
+              <div><img src="images/room-1.jpg" alt="" width="100%" height="200px"></div>
+              <div>
+              <h4 class="place-name">Hulia den Resorts</h4>
+              <span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span style="font-size: 10px;">4.5(1200 reviews)</span>
+              <p style="font-size: 12px;line-height: 32px;">Live a little and celebrate with champange</p>
+            <p style="font-size: 12px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+            <a href="" class="success-btn check-avail">check availability</a>
+          </div>
+              
+          <div>
+            
+            <br><br><br>
+           
+            <br><br> 
+            <p style="float: right;font-size: 12px;">1 room 2 days</p>
+            <br>
+            <p style="float: right;font-size: 15px;"> <span style="font-size: 12px;color: #eb5757;"> <s>$150</s> </span> <b> $130 </b> 
+            </p> <br>
+            <p style="font-size: 12px;float: right;">includes taxes and fees</p>
+          </div>
+
+            </div>
+            </a>
+            <!-----------tab 1 content ends------->
+
+             <!----tab 1 content----->
+             <a href="product-details.html">
+             <div class="tab grid-container">
+              <div><img src="images/room-1.jpg" alt="" width="100%" height="200px"></div>
+              <div>
+              <h4 class="place-name">Lakeside Motel Warefront</h4>
+              <span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span style="font-size: 10px;">4.5(1200 reviews)</span>
+              <p style="font-size: 12px;line-height: 32px;">Live a little and celebrate with champange</p>
+            <p style="font-size: 12px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+            <a href="" class="success-btn check-avail">check availability</a>
+          </div>
+              
+          <div>
+            <a href="" class="danger-btn" style="background-color: #f2994a;">Receive 30% discount on a restuarent </a>
+            <br><br><br>
+            <a href="" class="off-btn" style="float: right;">5% off</a>
+            <br><br> 
+            <p style="float: right;font-size: 12px;">1 room 2 days</p>
+            <br>
+            <p style="float: right;">  <b> $300 </b> 
+            </p> <br>
+            <p style="font-size: 12px;float: right;">includes taxes and fees</p>
+          </div>
+
+            </div>
+            </a>
+            <!-----------tab 1 content ends------->
+
+             <!----tab 1 content----->
+             <a href="product-details.html">
+             <div class="tab grid-container">
+              <div><img src="images/room-1.jpg" alt="" width="100%" height="200px"></div>
+              <div>
+              <h4 class="place-name">Hulia den Resorts</h4>
+              <span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star checked" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span class="fa fa-star" style="font-size: 10px;"></span>
+<span style="font-size: 10px;">4.5(1200 reviews)</span>
+              <p style="font-size: 12px;line-height: 32px;">Live a little and celebrate with champange</p>
+            <p style="font-size: 12px;">React includes sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+            <a href="" class="success-btn check-avail">check availability</a>
+          </div>
+              
+          <div>
+            
+            <br><br><br>
+           
+            <br><br> 
+            <p style="float: right;font-size: 12px;">1 room 2 days</p>
+            <br>
+            <p style="float: right;font-size: 15px;"> <span style="font-size: 12px;color: #eb5757;"> <s>$150</s> </span> <b> $130 </b> 
+            </p> <br>
+            <p style="font-size: 12px;float: right;">includes taxes and fees</p>
+          </div>
+
+            </div>
+            </a>
+            <!-----------tab 1 content ends------->
+            
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo">Hotel and apartments</label>
+            <div class="tab">
+              <h1>Tab Two Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            
+            <input type="radio" name="tabs" id="tabthree">
+            <label for="tabthree">Residence</label>
+            <div class="tab">
+              <h1>Tab Three Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabfour">
+            <label for="tabfour">Resort</label>
+            <div class="tab">
+              <h1>Tab Three Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <input type="radio" name="tabs" id="tabfive">
+            <label for="tabfive">Shared space</label>
+            <div class="tab">
+              <h1>Tab Three Content</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+          </div>
+          
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------product details ends----------->
+
+
+<!--------------footer------------>
+
+
+<section class="explore mtop">
+  <div class="container" style="text-align: center;">
+    <h1> <b>Explore the world with My Dream place </b></h1>
+    <p>Discover new places and experiences</p>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container grid">
+    <div class="box logo">
+      
+        <img src="images/logo.png" width="15px" alt=""> My Dream place
+       
+      <p>your next goto companion for <br> travel</p>
+      
+    </div>
+
+    <div class="box">
+      <h2>Company</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+
+    <div class="box">
+      <h2>Explore</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Terms and policies</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Help</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    
+  </div>
+</footer>
+
+<div class="legal">
+  <p class="  container">&copy; my Dream Place 2022</p>
+</div>
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+<!-- fontawesome -->
+
+</body>
+
+</html>
